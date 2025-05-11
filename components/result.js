@@ -32,7 +32,7 @@ const Result = () => {
   const preview = useControls(
     'preview',
     {
-      autoRotate: true,
+      autoRotate: false,
       contactShadow: true,
       intensity: { value: 1, min: 0, max: 2, step: 0.1, label: 'light intensity' },
       preset: {
