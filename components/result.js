@@ -44,7 +44,7 @@ const Result = () => {
         options: ['', 'sunset', 'dawn', 'night', 'warehouse', 'forest', 'apartment', 'studio', 'city', 'park', 'lobby'],
       },
     },
-    { collapsed: true },
+    { collapsed: false },
   )
 
   const [loading, sandboxId, error, sandboxCode] = useSandbox({
@@ -107,7 +107,7 @@ const Result = () => {
     return temp
   }, [fileName, loading, error, sandboxCode, sandboxId, config.types])
 
-  useControls('exports', exports, { collapsed: true }, [exports])
+  useControls('exports', exports, { collapsed: false }, [exports])
 
   return (
     <div className="h-full w-screen">
