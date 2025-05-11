@@ -114,9 +114,9 @@ const Result = () => {
       {!code && !scene ? (
         <p className="text-4xl font-bold w-screen h-screen flex justify-center items-center">Loading ...</p>
       ) : (
-        <div className="grid grid-cols-5 h-full">
+        <div className="grid grid-cols-8 h-full">
           {code && <Code>{code}</Code>}
-          <section className="h-full w-full col-span-2">{scene && <Viewer {...config} {...preview} />}</section>
+          <section className="h-full w-full col-span-5">{scene && <Viewer {...config} {...preview} />}</section>
         </div>
       )}
       <Leva hideTitleBar collapsed />
